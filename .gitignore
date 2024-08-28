@@ -1,0 +1,533 @@
+
+Playground
+Indonesia
+
+
+Informasi
+Tutorial 0
+Tutorial 0
+Tutorial 0: Konfigurasi dan Instalasi Git dan Django
+Pemrograman Berbasis Platform (CSGE602022) — diselenggarakan oleh Fakultas Ilmu Komputer Universitas Indonesia, Semester Ganjil 2024/2025
+
+Tujuan Pembelajaran
+Setelah menyelesaikan tutorial ini, mahasiswa diharapkan untuk dapat:
+
+Mengerti perintah-perintah dasar Git yang perlu diketahui untuk mengerjakan proyek aplikasi.
+Menggunakan perintah-perintah dasar Git yang perlu diketahui untuk mengerjakan proyek aplikasi.
+Membuat repositori Git lokal dan daring (GitHub).
+Menambahkan remote antara repositori Git lokal dan repositori daring pada GitHub.
+Memahami branching pada Git dan mampu melakukan merge request/pull request.
+Tutorial: Pembuatan Akun GitHub (Lewati Jika Sudah Ada)
+Pengenalan Tentang Git dan GitHub
+Pengenalan awal ini akan membantumu memahami dasar-dasar mengenai Git dan platform berbasis web yang dikenal sebagai GitHub.
+
+Git: Sistem Kontrol Versi yang Kuat
+Git adalah sistem kontrol versi yang membantumu melacak perubahan pada kode sumber proyek.
+Dengan Git, kamu dapat memantau semua revisi yang telah dilakukan pada proyekmu seiring waktu.
+GitHub: Platform Kolaborasi Menggunakan Git
+GitHub adalah platform berbasis web yang memungkinkanmu untuk menyimpan, mengelola, dan berkolaborasi pada proyek-proyek menggunakan Git.
+Ini memberikan wadah yang aman untuk meng-host proyekmu dan berinteraksi dengan rekan tim melalui Git.
+Mengapa Penting?
+Git dan GitHub memainkan peran penting dalam pengembangan perangkat lunak modern dan kolaborasi tim.
+Keduanya memungkinkan tim untuk melacak perubahan kode, menyimpan versi, dan bekerja bersama dalam proyek secara efisien.
+Dengan pemahaman dasar mengenai Git dan GitHub, kamu siap untuk melangkah lebih jauh dalam dunia pengembangan perangkat lunak yang kolaboratif dan terstruktur.
+
+Langkah 1: Membuat Akun di GitHub
+Langkah selanjutnya adalah membuat akun di GitHub, yang akan memungkinkanmu untuk mulai berkolaborasi pada proyek-proyek menggunakan Git.
+
+Buka Situs Web GitHub
+
+Buka peramban web dan akses GitHub.
+Membuat Akun
+
+Di halaman beranda GitHub, cari tombol Sign up di pojok kanan atas halaman.
+Klik tombol tersebut untuk memulai proses pendaftaran akun.
+Isi Formulir Pendaftaran
+
+Isi formulir pendaftaran dengan informasi yang diperlukan, seperti nama pengguna yang ingin digunakan, alamat email yang valid, dan kata sandi yang aman.
+Pastikan kamu menyimpan informasi ini dengan aman untuk masuk ke akunmu di masa mendatang.
+Verifikasi Akun Melalui Email
+
+Setelah mengisi formulir, GitHub akan mengirimkan email verifikasi ke alamat email yang kamu berikan.
+Buka email tersebut dan ikuti instruksi untuk verifikasi akunmu.
+Akun GitHub Siap Digunakan
+
+Setelah verifikasi selesai, kamu akan memiliki akun GitHub yang siap digunakan untuk berkolaborasi dalam proyek dan melacak perubahan menggunakan Git.
+CATATAN
+Akun GitHub adalah pintu masuk untuk terlibat dalam kolaborasi proyek dan menyimpan proyekmu di platform ini.
+Pastikan informasi pendaftaran yang kamu berikan akurat dan aman.
+Selamat, Kamu Telah Membuat Akun GitHub
+Kamu sekarang telah memiliki akun GitHub yang dapat digunakan untuk menyimpan proyek, berkolaborasi dengan orang lain, dan masih banyak lagi.
+
+Tutorial: Instalasi IDE
+IDE (Integrated Development Environment) adalah perangkat lunak yang membantu para pengembang dalam menulis, mengedit, dan mengelola kode. Berikut adalah langkah-langkah untuk memasang IDE.
+
+Langkah 1: Pemilihan Text Editor atau IDE
+Pilihlah text editor atau IDE yang sesuai dengan preferensimu. Beberapa pilihan populer yang dapat kamu pertimbangkan meliputi:
+
+Visual Studio Code
+Sublime Text
+PyCharm
+Neovim
+Langkah 2: Proses Instalasi
+Pergi ke situs web resmi IDE yang kamu pilih.
+Ikuti petunjuk yang diberikan untuk mengunduh installer IDE.
+Jalankan installer dan ikuti instruksi di layar untuk menyelesaikan proses instalasi.
+Langkah 3: Memulai Menggunakan IDE
+Setelah proses instalasi selesai, buka IDE yang telah terinstal.
+Eksplorasi antarmuka dan fitur yang disediakan oleh IDE untuk membantumu dalam pengembangan proyek.
+CATATAN
+Pastikan kamu memilih IDE yang sesuai dengan jenis proyek yang akan dikerjakan.
+Jangan ragu untuk mengeksplorasi fitur-fitur IDE (contoh: extensions atau plugin) dan memanfaatkan sumber daya pendukung, seperti dokumentasi dan tutorial, untuk meningkatkan produktivitas dalam pengembangan perangkat lunak.
+Tutorial: Instalasi dan Konfigurasi Git
+Langkah 1: Instalasi Git
+Jika Git belum terpasang pada sistem, kamu dapat mengikuti langkah-langkah berikut untuk menginstalnya.
+
+Buka situs web resmi Git di sini.
+Pilih sistem operasi yang sesuai (Windows, macOS, atau Linux) dan unduh installer yang sesuai.
+Jalankan installer yang telah diunduh dan ikuti petunjuk di layar untuk menyelesaikan proses instalasi.
+Sebagai tambahan, jangan lupa untuk mencentang "Git Credential Manager Core" untuk mempermudah integrasi Git dengan GitHub.
+Gambar opsi Git Credential Manager Core
+
+Langkah 2: Konfigurasi Awal Git
+Setelah Git terpasang, langkah-langkah berikut akan membantumu mengatur konfigurasi awal sebelum mulai menggunakan Git.
+
+Buatlah sebuah folder/direktori baru untuk menyimpan proyek Git kamu, kemudian masuklah ke direktori tersebut.
+Salinlah path ke direktori yang sudah kamu buat.
+Buka terminal atau command prompt pada sistem, kemudian pindah ke direktori yang sudah kamu buat dengan menjalankan perintah cd <path_direktori>
+Inisiasi repositori baru dengan perintah git init. Perintah ini akan membuat repositori Git kosong di dalam direktori yang kamu tentukan.
+Langkah 3: Konfigurasi Nama Pengguna dan Email
+Sebelum mulai berkontribusi ke repositori, konfigurasikan nama pengguna dan alamat email agar terhubung dengan commit-mu.
+
+Atur username dan email yang akan diasosiasikan dengan pekerjaanmu ke repositori Git ini dengan menjalankan perintah di bawah ini. Sesuaikan dengan username dan email yang kamu gunakan pada GitHub.
+
+git config --global user.name "<NAME>"
+git config --global user.email "<EMAIL>"
+
+Contoh:
+
+git config --global user.name "pakbepe"
+git config --global user.email "pak.bepe@cs.ui.ac.id"
+
+Perlu diketahui bahwa flag --global akan mengubah konfigurasi global untuk seluruh sistem.
+
+CATATAN
+Pastikan untuk mengganti <NAME> dan <EMAIL> dengan informasi pribadimu
+Langkah 4: Konfigurasi Autentikasi
+Untuk nantinya menghubungkan akun Git kamu dengan akun GitHub, terdapat konfigurasi ekstra yang perlu kamu tambahkan. Kamu hanya perlu menjalankan kedua perintah dibawah ini:
+
+Windows
+
+git credential-manager configure
+git config --global credential.credentialStore wincredman
+
+Unix (macOS, Linux)
+
+git credential-manager configure
+git config --global credential.credentialStore keychain
+
+TIP
+Apabila perintah git credential-manager tidak bisa dijalankan, kamu bisa coba perintah git-credential-manager atau git-credential-manager-core.
+Pada macOS, jika kedua perintah tersebut tidak berhasil, kamu bisa mencoba mengunduh git credential manager menggunakan Homebrew dengan perintah brew install git-credential-manager-core.
+Jika macOS tidak memiliki Homebrew, kamu bisa mengunduhnya dengan mengikuti instruksi dari web ini.
+Langkah 5: Verifikasi Konfigurasi
+Untuk memastikan konfigurasi telah diatur dengan benar pada repositori lokal, kamu dapat menjalankan perintah berikut.
+
+git config --list
+
+Tutorial: Penggunaan Dasar Git
+Repositori adalah tempat penyimpanan untuk proyek perangkat lunak, yang mencakup semua revisi dan perubahan yang telah dilakukan pada kode. Untuk mengeksekusi perintah-perintah Git, kamu dapat melakukannya pada repositori di GitHub, platform kolaboratif untuk mengelola proyek menggunakan Git.
+
+Langkah 1: Melakukan Inisiasi Repositori di GitHub
+Langkah pertama dalam penggunaan Git adalah melakukan inisiasi repositori di GitHub untuk memulai pelacakan perubahan pada proyekmu.
+
+Buka GitHub melalui peramban web.
+
+Buat Repositori Baru
+
+Pada halaman beranda GitHub, buat repositori baru dengan nama my-first-repo.
+Buka halaman repositori yang baru kamu buat. Pastikan untuk mengatur visibilitas proyek sebagai "Public" dan biarkan pengaturan lainnya pada nilai default.
+Tentukan Direktori Lokal
+
+Pilih direktori lokal di komputermu yang telah diinisiasi dengan Git. Inilah tempat kamu akan menyimpan versi lokal dari proyek.
+Tambahkan Berkas README.md
+
+Buat berkas baru dengan nama README.md dalam direktori lokal proyekmu.
+Isi berkas README.md dengan informasi seperti nama, NPM, dan kelas. Contoh:
+Nama : Pak Bepe
+
+NPM : 2201234567
+
+Kelas : PBP A
+
+Cek Status dan Lakukan Tracking
+
+Buka command prompt atau terminal, lalu jalankan git status pada direktori yang sudah kamu pilih. Perintah ini akan menampilkan berkas-berkas yang belum di-track (untracked).
+Gunakan perintah git add README.md untuk menandai berkas README.md sebagai berkas yang akan di-commit (tracked).
+Commit Perubahan
+
+Jalankan kembali git status dan pastikan berkas README.md sudah ditandai sebagai berkas yang akan di-commit.
+Lanjutkan dengan menjalankan git commit -m "<KOMENTAR KAMU>" untuk membuat commit dengan pesan komentar yang sesuai dengan perubahan yang kamu lakukan.
+CATATAN
+Langkah ini akan membuat kamu siap untuk mulai melacak perubahan pada proyek menggunakan Git.
+
+TIP
+Good practice dalam memberikan komentar commit adalah menjelaskan dengan singkat apa yang kamu lakukan. Pada umumnya, komentar commit ditulis menggunakan bahasa Inggris. Salah satu contoh komentar commit yang bisa kamu gunakan untuk contoh di atas adalah Create README.md file atau Membuat berkas README.md.
+Komentar commit yang baik dapat membantu kamu dan rekan-rekan tim kamu dalam memahami tujuan perubahan tersebut.
+Hindari komentar yang terlalu umum atau ambigu, seperti Perbaikan bug (Fix bugs) atau Update file.
+Langkah 2: Menghubungkan Repositori Lokal dengan Repositori di GitHub
+Setelah melakukan inisiasi repositori lokal, langkah selanjutnya adalah menghubungkannya dengan repositori di GitHub agar kamu dapat berkolaborasi dan menyimpan perubahan di platform daring tersebut.
+
+Buat Branch Utama Baru
+
+Di terminal atau command prompt, jalankan perintah git branch -M main untuk membuat branch utama baru dengan nama "main".
+Pastikan huruf "M" pada perintah -M ditulis dengan huruf kapital.
+Hubungkan dengan Repositori di GitHub
+
+Gunakan perintah git remote add origin <URL_REPO> untuk menghubungkan repositori lokal dengan repositori di GitHub.
+Gantilah <URL_REPO> dengan URL HTTPS repositori yang telah kamu buat di GitHub. Contoh:
+git remote add origin https://github.com/pakbepe/test.git
+
+Lakukan Penyimpanan Pertama ke GitHub
+
+Terakhir, lakukan penyimpanan pertama ke GitHub dengan menjalankan perintah git push -u origin main.
+Perintah ini akan mengirimkan semua perubahan yang ada pada branch saat ini (dalam hal ini adalah branch utama) di repositori lokal ke branch main di repositori GitHub.
+Apabila ini pertama kalinya kamu melakukan push ke GitHub dan kamu menggunakan OS Windows, setelah melakukan instalasi, seharusnya akan muncul window yang meminta kamu untuk sign in ke GitHub. Klik "Sign in with your browser", kemudian ikuti instruksi yang terdapat pada window tersebut.
+Lakukan Pengecekan Kembali
+
+Lakukan refresh pada halaman repositori kamu, seharusnya berkas README.md kamu sudah dapat terlihat.
+CATATAN
+Langkah ini penting untuk menjaga konsistensi antara repositori lokal dan repositori di GitHub.
+Proses ini memungkinkanmu untuk mulai berkolaborasi dan menyimpan perubahan proyek secara terstruktur di platform GitHub.
+Langkah 3: Melakukan Cloning terhadap Suatu Repositori
+Cloning repositori adalah proses menduplikasi seluruh konten dari repositori yang ada di platform GitHub ke komputer lokal. Langkah-langkahnya adalah sebagai berikut.
+
+Buka halaman repositori di GitHub yang telah kamu buat sebelumnya.
+
+Salin URL Clone
+
+Klik tombol Code di pojok kanan atas halaman repositori di GitHub.
+Pilih opsi HTTPS untuk salin URL clone.
+Clone Repositori ke Komputer Lokal
+
+Buka terminal atau command prompt di direktori yang berbeda dari tempat repositori lokalmu sebelumnya.
+Jalankan perintah git clone <URL_CLONE> (gantilah URL_CLONE dengan URL yang telah kamu salin).
+Perintah ini akan menduplikasi seluruh repositori ke komputer lokalmu.
+Saat ini, kamu memiliki tiga repositori:
+
+Repositori asli di komputer lokal.
+Repositori daring di GitHub yang terhubung dengan repositori lokal.
+Repositori baru hasil dari proses cloning yang terhubung dengan repositori GitHub.
+CATATAN
+Langkah ini memungkinkanmu untuk bekerja dengan repositori di berbagai tempat dengan mudah.
+Langkah 4: Melakukan Push kepada Suatu Repositori
+Seperti yang sudah disinggung sebelumnya (Langkah 2), push adalah proses mengirimkan perubahan yang kamu lakukan di repositori lokal ke repositori di GitHub. Langkah-langkahnya adalah sebagai berikut.
+
+Buka kembali repositori lokal yang pertama kali kamu buat.
+
+Ubah isi berkas README.md dengan menambahkan atribut Hobi. Contohnya adalah sebagai berikut.
+
+Nama : Pak Bepe
+
+NPM : 2201234567
+
+Kelas : PBP A
+
+Hobi : Tidur
+
+Lakukan Push ke Repositori GitHub
+
+Buka terminal atau command prompt, kemudian masuk ke repositori lokal yang telah kamu ubah.
+Jalankan perintah git status untuk melihat status perubahan yang dilakukan.
+Jalankan git add README.md untuk menambahkan perubahan ke dalam tahap yang akan di-commit.
+Lakukan commit dengan menjalankan perintah git commit -m "<KOMENTAR KAMU>" untuk memberikan deskripsi singkat tentang perubahan yang kamu lakukan.
+Terakhir, jalankan git push -u origin <NAMA_BRANCH> untuk mengirim perubahan ke branch yang dipilih pada repositori GitHub (gantilah "Nama Branch" dengan target branch, misalnya main).
+Lakukan Pengecekan Kembali
+
+Lakukan refresh halaman kamu, seharusnya berkas README.md kamu sudah berubah.
+TIP
+Jika kamu ingin mengambil semua perubahan yang belum di-stage (ditandai untuk dimasukkan dalam commit) dari seluruh direktori proyek kamu, jalankan git add ..
+
+Langkah 5: Melakukan Pull dari Suatu Repositori
+Pull pada suatu repositori adalah proses mengambil perubahan terbaru dari repositori di GitHub dan menggabungkannya dengan repositori lokal.
+
+Buka kembali repositori lokal yang telah kamu clone sebelumnya di terminal atau command prompt.
+
+Jalankan Perintah Pull
+
+Jalankan perintah git pull origin main untuk mengambil perubahan terbaru yang ada di repositori GitHub dan menggabungkannya dengan repositori lokalmu.
+Lakukan Pengecekan Kembali
+
+Periksa kembali berkas README.md di repositori lokal tersebut. Seharusnya berkas README.md kamu sudah menampilkan hobi kamu.
+CATATAN
+Langkah ini memastikan bahwa repositori lokalmu selalu diperbarui dengan perubahan terbaru yang ada di repositori GitHub.
+
+TIP
+Melakukan pull secara berkala penting untuk menghindari konflik dan memastikan kamu bekerja dengan versi terbaru dari proyek.
+
+Langkah 6: Melakukan Branching pada Suatu Repositori
+Pada tahap ini kamu akan mempelajari tentang penggunaan branch dalam Git. Penggunaan branch memungkinkan kamu untuk mengembangkan fitur atau memperbaiki bug di lingkungan terpisah sebelum menggabungkannya kembali ke branch utama.
+
+Apa Itu Branch di Git?
+
+Branch di Git adalah cabang terpisah dari source code yang memungkinkan pengembangan independen dari fitur atau perubahan.
+Hal ini memungkinkan tim untuk bekerja pada fitur atau perbaikan bug tanpa mengganggu kode yang ada di branch utama.
+Membuat dan Mengganti Branch Baru
+
+Pada direktori repositori lokal asli (bukan clone), jalankan perintah git checkout -b <NAMA_BRANCH> di terminal atau command prompt untuk membuat dan beralih ke branch baru. Contoh: git checkout -b jurusan_branch
+
+Tambahkan atribut jurusan pada berkas README.md. Contoh:
+
+Nama : Pak Bepe
+
+NPM : 2201234567
+
+Kelas : PBP A
+
+Hobi : Tidur
+
+Jurusan : Ilmu Sistem Informasi Komputer
+
+Menyimpan Perubahan dan Push ke GitHub
+
+Setelah menambahkan atribut jurusan, simpan berkas tersebut.
+Lakukan add, commit, dan push ke GitHub dengan menjalankan perintah yang sudah kamu kuasai sebelumnya.
+Jalankan perintah git push -u origin <NAMA_BRANCH>. Pastikan untuk mengganti <NAMA_BRANCH> sesuai dengan nama branch baru yang telah dibuat.
+Menggabungkan Branch Menggunakan Pull Request
+
+Buka kembali halaman repositori kamu pada GitHub.
+Secara otomatis, pop-up dengan tombol Compare & pull request akan muncul. Jika tidak, alternatifnya adalah dengan menekan tombol Pull Request dan kemudian memilih opsi New pull request.
+Setelah itu, GitHub akan membandingkan perubahan yang ada di kedua branch yang ingin digabungkan.
+Apabila tidak terdapat konflik, tekan tombol Merge pull request yang akan menggabungkan perubahan dari branch yang ingin digabungkan ke dalam branch utama (main).
+Dengan melakukan langkah di atas, semua perubahan dari kedua branch akan diintegrasikan ke dalam branch utama, menciptakan kesatuan antara perubahan tersebut.
+CATATAN
+Jika kamu ingin berpindah antar branch yang sudah ada, jalankan git checkout <NAMA_BRANCH> pada terminal. Flag -b pada perintah sebelum-sebelumnya digunakan untuk membuat branch baru dan beralih ke branch tersebut dalam satu langkah.
+Konflik terjadi ketika perubahan yang dilakukan pada satu branch bertabrakan dengan perubahan yang dilakukan pada branch lain. Misalnya, jika dua pengembang mengubah bagian yang sama dari berkas yang sama dalam waktu bersamaan, Git tidak dapat dengan otomatis memutuskan perubahan mana yang harus diterapkan.
+Jika terdapat konflik atau perubahan yang saling bertabrakan, platform ini akan meminta kamu untuk menentukan perubahan mana yang sebaiknya diambil.
+Penting untuk memahami konsep branching dalam Git, karena ini memungkinkan pengembangan yang terorganisir dan terpisah, sebelum semua perubahan dikombinasikan kembali ke dalam kode utama.
+Tutorial: Instalasi Django dan Inisiasi Proyek Django
+Django adalah kerangka kerja (framework) yang populer untuk pengembangan aplikasi web dengan bahasa pemrograman Python. Dalam tutorial ini, kamu akan mempelajari langkah-langkah instalasi Django dan inisiasi proyek demo sebagai starter.
+
+Langkah 1: Membuat Direktori dan Mengaktifkan Virtual Environment
+Buat direktori baru dengan nama mental-health-tracker dan masuk ke dalamnya.
+
+Di dalam direktori tersebut, buka command prompt (Windows) atau terminal shell (Unix).
+
+Buat virtual environment dengan menjalankan perintah berikut.
+
+python -m venv env
+
+Virtual environment ini berguna untuk mengisolasi package serta dependencies dari aplikasi agar tidak bertabrakan dengan versi lain yang ada pada komputermu. Kamu dapat mengaktifkan virtual environment dengan perintah berikut.
+
+Windows:
+
+env\Scripts\activate
+
+Unix (Mac/Linux):
+
+source env/bin/activate
+
+Virtual environment akan aktif dan ditandai dengan (env) di baris input terminal.
+
+Langkah 2: Menyiapkan Dependencies dan Membuat Proyek Django
+Dependencies adalah komponen atau modul yang diperlukan oleh suatu perangkat lunak untuk berfungsi, termasuk library, framework, atau package. Hal tersebut memungkinkan pengembang memanfaatkan kode yang telah ada, mempercepat pengembangan, tetapi juga memerlukan manajemen yang hati-hati untuk memastikan kompatibilitas versi yang tepat. Penggunaan virtual environment membantu mengisolasi dependencies antara proyek-proyek yang berbeda.
+
+Di dalam direktori yang sama, buat berkas requirements.txt dan tambahkan beberapa dependencies.
+
+django
+gunicorn
+whitenoise
+psycopg2-binary
+requests
+urllib3
+
+Lakukan instalasi terhadap dependencies yang ada dengan perintah berikut. Jangan lupa jalankan virtual environment terlebih dahulu sebelum menjalankan perintah berikut.
+
+pip install -r requirements.txt
+
+Buat proyek Django bernama mental_health_tracker dengan perintah berikut.
+
+django-admin startproject mental_health_tracker .
+
+CATATAN
+Pastikan karakter . tertulis di akhir perintah.
+
+Langkah 3: Konfigurasi Proyek dan Menjalankan Server
+Tambahkan kedua string berikut pada ALLOWED_HOSTS di settings.py untuk keperluan deployment:
+
+...
+ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+...
+
+Dalam konteks deployment, ALLOWED_HOSTS berfungsi sebagai daftar host yang diizinkan untuk mengakses aplikasi web. Dengan menetapkan nilai di atas, kamu mengizinkan akses dari host lokal, artinya hanya bisa diakses dari jaringan kamu saja. Namun, apabila kamu men-deploy aplikasimu ke suatu server, pastikan bahwa kamu menambahkan host dari server tersebut pada ALLOWED_HOSTS.
+
+Pastikan bahwa berkas manage.py ada pada direktori yang aktif pada terminal kamu saat ini. Jalankan server Django dengan perintah:
+
+Windows:
+
+python manage.py runserver
+
+Unix:
+
+python3 manage.py runserver
+
+Buka http://localhost:8000 pada peramban web untuk melihat animasi roket sebagai tanda aplikasi Django kamu berhasil dibuat.
+
+Langkah 4: Menghentikan Server dan Menonaktifkan Virtual Environment
+Untuk menghentikan server, tekan Ctrl+C (Windows/Linux) atau Control+C (Mac) pada terminal.
+
+Nonaktifkan virtual environment dengan perintah:
+
+deactivate
+
+Selamat! Kamu telah berhasil membuat aplikasi Django dari awal.
+
+Tutorial: Unggah Proyek ke Repositori GitHub
+Buatlah repositori GitHub baru bernama mental-health-tracker dengan visibilitas public.
+
+Inisiasi direktori lokal mental-health-tracker sebagai repositori Git.
+
+TIP
+Hint: Ingat kembali tahap tutorial sebelumnya
+
+Tambahkan Berkas .gitignore
+
+Tambahkan berkas .gitignore dan isilah berkas tersebut dengan teks berikut.
+
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
+
+# Backup files
+*.bak
+
+# If you are using PyCharm
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# AWS User-specific
+.idea/**/aws.xml
+
+# Generated files
+.idea/**/contentModel.xml
+
+# Sensitive or high-churn files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# File-based project format
+*.iws
+
+# IntelliJ
+out/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Python
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery
+celerybeat-schedule.*
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# sftp configuration file
+sftp-config.json
+
+# Package control specific files Package
+Control.last-run
+Control.ca-list
+Control.ca-bundle
+Control.system-ca-bundle
+GitHub.sublime-settings
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
